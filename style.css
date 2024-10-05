@@ -1,0 +1,99 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e3f2fd; /* Light Blue background */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff; /* White background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #1565c0; /* Dark blue color */
+}
+
+.input-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#excel-url {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #1565c0; /* Dark blue border */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #1565c0; /* Dark blue background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0d47a1; /* Darker blue on hover */
+}
+
+.sheet-list {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f1f8e9; /* Light green background */
+    border-radius: 5px;
+}
+
+.sheet-link {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: #0d47a1;
+    font-size: 16px;
+}
+
+.sheet-link:hover {
+    background-color: #bbdefb; /* Light blue hover effect */
+    border-radius: 5px;
+}
+
+.sheet-content {
+    margin-top: 20px;
+    overflow-x: auto;
+    background-color: #ffffff; /* White background for content */
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd; /* Light border */
+}
+
+/* Styles to mimic Excel sheet look */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 14px;
+}
+
+table, th, td {
+    border: 1px solid #999; /* Light gray borders to look like Excel cells */
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f0f0f0; /* Light gray background for header row */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light alternate row coloring */
+}

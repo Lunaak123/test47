@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Data Operations</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Excel Data Operations</h1>
+        <div id="operation-panel">
+            <label for="primary-column">Primary Column:</label>
+            <input type="text" id="primary-column" placeholder="Enter column name (e.g., A)">
+            <label for="operation-columns">Operation Columns:</label>
+            <input type="text" id="operation-columns" placeholder="Enter column names (e.g., B,C)">
+            <label for="operation-type">Operation Type:</label>
+            <select id="operation-type">
+                <option value="and">AND</option>
+                <option value="or">OR</option>
+            </select>
+            <label for="operation">Operation:</label>
+            <select id="operation">
+                <option value="null">NULL</option>
+                <option value="not-null">Not NULL</option>
+            </select>
+            <button id="apply-operation">Apply Operation</button>
+        </div>
+
+        <div id="sheet-content"></div>
+
+        <button id="download-button">Download</button>
+        <button id="download-image-button">Download as Image (JPG)</button>
+        <button id="download-pdf-button">Download as PDF</button>
+
+        <div id="download-modal" class="modal">
+            <div class="modal-content">
+                <span id="close-modal" class="close">&times;</span>
+                <h2>Download Options</h2>
+                <label for="filename">Filename:</label>
+                <input type="text" id="filename" placeholder="Enter filename">
+                <label for="file-format">File Format:</label>
+                <select id="file-format">
+                    <option value="xlsx">Excel (.xlsx)</option>
+                    <option value="csv">CSV (.csv)</option>
+                </select>
+                <button id="confirm-download">Download</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
